@@ -11798,3 +11798,296 @@
   "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
   "userId": "67f922e34e81393cc5253968"
 }
+[2025-04-11T21:03:08.195Z] [INFO] Server running on port 3000 {
+  "port": "3000",
+  "env": "development",
+  "mongoUri": "Connected",
+  "jwtSecret": "Set"
+}
+[2025-04-11T21:03:08.934Z] [INFO] MongoDB Connected {
+  "uri": "cluster0.prvcdri.mongodb.net/job-tracker?retryWrites=true&w=majority&appName=Cluster0"
+}
+[2025-04-11T21:03:52.124Z] [DEBUG] [testing] Incoming request: POST /api/auth/login {
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "content-length": "65",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+    "content-type": "application/json",
+    "sec-ch-ua-mobile": "?0",
+    "accept": "*/*",
+    "origin": "http://localhost:5173",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "http://localhost:5173/",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9,hi;q=0.8"
+  },
+  "body": {
+    "email": "bailwalsiddharth@gmail.com",
+    "password": "siddharth1382"
+  },
+  "query": {},
+  "params": {}
+}
+[2025-04-11T21:03:52.124Z] [DEBUG] [testing] Request body {
+  "url": "/api/auth/login",
+  "method": "POST",
+  "body": {
+    "email": "bailwalsiddharth@gmail.com",
+    "password": "siddharth1382"
+  }
+}
+[2025-04-11T21:03:52.124Z] [DEBUG] Login request received {
+  "body": {
+    "email": "bailwalsiddharth@gmail.com",
+    "password": "[REDACTED]"
+  }
+}
+[2025-04-11T21:03:52.270Z] [INFO] User logged in successfully {
+  "userId": "67f922e34e81393cc5253968"
+}
+[2025-04-11T21:03:52.271Z] [INFO] POST /api/auth/login 200 - 159ms {
+  "method": "POST",
+  "url": "/api/auth/login",
+  "status": 200,
+  "duration": 159,
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+}
+[2025-04-11T21:03:52.320Z] [DEBUG] [testing] Incoming request: GET /api/jobs {
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Y5MjJlMzRlODEzOTNjYzUyNTM5NjgiLCJpYXQiOjE3NDQ0MDU0MzIsImV4cCI6MTc0Njk5NzQzMn0.IY--GjRYU7pEeHwDAnzDQTPc_SHG2g_iyGUP5Lol2_4",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+    "content-type": "application/json",
+    "sec-ch-ua-mobile": "?0",
+    "accept": "*/*",
+    "origin": "http://localhost:5173",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "http://localhost:5173/",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9,hi;q=0.8",
+    "if-none-match": "W/\"10a-XM14C2059kPjBZBBRu3NyF2vbg8\""
+  },
+  "query": {},
+  "params": {}
+}
+[2025-04-11T21:03:52.321Z] [DEBUG] Checking authentication headers {
+  "url": "/api/jobs",
+  "headers": "Authorization header present"
+}
+[2025-04-11T21:03:52.321Z] [DEBUG] Token extracted from header {
+  "url": "/api/jobs"
+}
+[2025-04-11T21:03:52.325Z] [DEBUG] Token verified successfully {
+  "userId": "67f922e34e81393cc5253968"
+}
+[2025-04-11T21:03:52.370Z] [DEBUG] User attached to request {
+  "userId": "67f922e34e81393cc5253968",
+  "route": "/api/jobs"
+}
+[2025-04-11T21:03:52.413Z] [INFO] GET /api/jobs 200 - 93ms {
+  "method": "GET",
+  "url": "/api/jobs",
+  "status": 200,
+  "duration": 93,
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "userId": "67f922e34e81393cc5253968"
+}
+[2025-04-11T21:03:52.415Z] [DEBUG] Token verified successfully {
+  "userId": "67f922e34e81393cc5253968"
+}
+[2025-04-11T21:03:52.414Z] [DEBUG] [testing] Incoming request: GET /api/jobs {
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Y5MjJlMzRlODEzOTNjYzUyNTM5NjgiLCJpYXQiOjE3NDQ0MDU0MzIsImV4cCI6MTc0Njk5NzQzMn0.IY--GjRYU7pEeHwDAnzDQTPc_SHG2g_iyGUP5Lol2_4",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+    "content-type": "application/json",
+    "sec-ch-ua-mobile": "?0",
+    "accept": "*/*",
+    "origin": "http://localhost:5173",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "http://localhost:5173/",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9,hi;q=0.8",
+    "if-none-match": "W/\"15c-/HCVUwe8V1oK9iSJDMtFLabPBis\""
+  },
+  "query": {},
+  "params": {}
+}
+[2025-04-11T21:03:52.414Z] [DEBUG] Token extracted from header {
+  "url": "/api/jobs"
+}
+[2025-04-11T21:03:52.414Z] [DEBUG] Checking authentication headers {
+  "url": "/api/jobs",
+  "headers": "Authorization header present"
+}
+[2025-04-11T21:03:52.455Z] [DEBUG] User attached to request {
+  "userId": "67f922e34e81393cc5253968",
+  "route": "/api/jobs"
+}
+[2025-04-11T21:03:52.496Z] [INFO] GET /api/jobs 304 - 82ms {
+  "method": "GET",
+  "url": "/api/jobs",
+  "status": 304,
+  "duration": 82,
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "userId": "67f922e34e81393cc5253968"
+}
+[2025-04-11T21:03:57.491Z] [DEBUG] [testing] Incoming request: DELETE /api/jobs/67f96dd075e0453dec95eff1 {
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Y5MjJlMzRlODEzOTNjYzUyNTM5NjgiLCJpYXQiOjE3NDQ0MDU0MzIsImV4cCI6MTc0Njk5NzQzMn0.IY--GjRYU7pEeHwDAnzDQTPc_SHG2g_iyGUP5Lol2_4",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+    "content-type": "application/json",
+    "sec-ch-ua-mobile": "?0",
+    "accept": "*/*",
+    "origin": "http://localhost:5173",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "http://localhost:5173/",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9,hi;q=0.8"
+  },
+  "query": {},
+  "params": {}
+}
+[2025-04-11T21:03:57.491Z] [DEBUG] [testing] Request body {
+  "url": "/api/jobs/67f96dd075e0453dec95eff1",
+  "method": "DELETE"
+}
+[2025-04-11T21:03:57.492Z] [DEBUG] Checking authentication headers {
+  "url": "/api/jobs/67f96dd075e0453dec95eff1",
+  "headers": "Authorization header present"
+}
+[2025-04-11T21:03:57.492Z] [DEBUG] Token extracted from header {
+  "url": "/api/jobs/67f96dd075e0453dec95eff1"
+}
+[2025-04-11T21:03:57.493Z] [DEBUG] Token verified successfully {
+  "userId": "67f922e34e81393cc5253968"
+}
+[2025-04-11T21:03:57.536Z] [DEBUG] User attached to request {
+  "userId": "67f922e34e81393cc5253968",
+  "route": "/api/jobs/67f96dd075e0453dec95eff1"
+}
+[2025-04-11T21:03:57.626Z] [INFO] DELETE /api/jobs/67f96dd075e0453dec95eff1 200 - 135ms {
+  "method": "DELETE",
+  "url": "/api/jobs/67f96dd075e0453dec95eff1",
+  "status": 200,
+  "duration": 135,
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "userId": "67f922e34e81393cc5253968"
+}
+[2025-04-11T21:04:03.285Z] [DEBUG] [testing] Incoming request: GET /api/jobs {
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Y5MjJlMzRlODEzOTNjYzUyNTM5NjgiLCJpYXQiOjE3NDQ0MDU0MzIsImV4cCI6MTc0Njk5NzQzMn0.IY--GjRYU7pEeHwDAnzDQTPc_SHG2g_iyGUP5Lol2_4",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+    "content-type": "application/json",
+    "sec-ch-ua-mobile": "?0",
+    "accept": "*/*",
+    "origin": "http://localhost:5173",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "http://localhost:5173/",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9,hi;q=0.8",
+    "if-none-match": "W/\"15c-/HCVUwe8V1oK9iSJDMtFLabPBis\""
+  },
+  "query": {},
+  "params": {}
+}
+[2025-04-11T21:04:03.285Z] [DEBUG] Checking authentication headers {
+  "url": "/api/jobs",
+  "headers": "Authorization header present"
+}
+[2025-04-11T21:04:03.285Z] [DEBUG] Token extracted from header {
+  "url": "/api/jobs"
+}
+[2025-04-11T21:04:03.286Z] [DEBUG] Token verified successfully {
+  "userId": "67f922e34e81393cc5253968"
+}
+[2025-04-11T21:04:03.327Z] [DEBUG] User attached to request {
+  "userId": "67f922e34e81393cc5253968",
+  "route": "/api/jobs"
+}
+[2025-04-11T21:04:03.370Z] [INFO] GET /api/jobs 200 - 86ms {
+  "method": "GET",
+  "url": "/api/jobs",
+  "status": 200,
+  "duration": 86,
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "userId": "67f922e34e81393cc5253968"
+}
+[2025-04-11T21:04:03.371Z] [DEBUG] [testing] Incoming request: GET /api/jobs {
+  "headers": {
+    "host": "localhost:3000",
+    "connection": "keep-alive",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Y5MjJlMzRlODEzOTNjYzUyNTM5NjgiLCJpYXQiOjE3NDQ0MDU0MzIsImV4cCI6MTc0Njk5NzQzMn0.IY--GjRYU7pEeHwDAnzDQTPc_SHG2g_iyGUP5Lol2_4",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
+    "content-type": "application/json",
+    "sec-ch-ua-mobile": "?0",
+    "accept": "*/*",
+    "origin": "http://localhost:5173",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "http://localhost:5173/",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9,hi;q=0.8",
+    "if-none-match": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+  },
+  "query": {},
+  "params": {}
+}
+[2025-04-11T21:04:03.371Z] [DEBUG] Checking authentication headers {
+  "url": "/api/jobs",
+  "headers": "Authorization header present"
+}
+[2025-04-11T21:04:03.371Z] [DEBUG] Token extracted from header {
+  "url": "/api/jobs"
+}
+[2025-04-11T21:04:03.373Z] [DEBUG] Token verified successfully {
+  "userId": "67f922e34e81393cc5253968"
+}
+[2025-04-11T21:04:03.415Z] [DEBUG] User attached to request {
+  "userId": "67f922e34e81393cc5253968",
+  "route": "/api/jobs"
+}
+[2025-04-11T21:04:03.459Z] [INFO] GET /api/jobs 304 - 89ms {
+  "method": "GET",
+  "url": "/api/jobs",
+  "status": 304,
+  "duration": 89,
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+  "userId": "67f922e34e81393cc5253968"
+}

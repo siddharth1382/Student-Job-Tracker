@@ -29,11 +29,16 @@ mongoose.connect(process.env.MONGO_URI)
 
 // CORS configuration
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174'],
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:5174',
+    'https://student-job-tracker-brown.vercel.app' // 👈 add your Vercel frontend URL here
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));
+
 
 // Request logging
 app.use(logger.requestLogger);
